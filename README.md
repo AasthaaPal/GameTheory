@@ -14,7 +14,6 @@ This is a full-stack application developed for a sports technology company to ma
 - Frontend:
 - Backend: 
 
-
 ## Screenshots
 
 
