@@ -11,8 +11,8 @@ This is a full-stack application developed for a sports technology company to ma
 
 
 ## Deployed Applications
-- Frontend:
-- Backend: 
+- Frontend: https://game-theory-7tnd1u20f-aasthaapals-projects.vercel.app/
+- Backend: https://gametheory-zqzm.onrender.com/
 
 ## Screenshots
 
@@ -23,6 +23,9 @@ This is a full-stack application developed for a sports technology company to ma
 To run this project locally, ensure you have the following installed:
 - Node.js (version compatible with React 18.3.1)
 - npm (comes with Node.js)
+- MongoDB
+- express
+
 
 ## Setup and Installation 
 
@@ -48,7 +51,15 @@ To run this project locally, ensure you have the following installed:
     
     The backend will start running at http://localhost:5050.
 
-4. Run the Frontend Application
+4. Set up environment variables:
+
+   Create a `.env` file in the root directory and add the following:
+   ```
+   MONGODB_URI=your_mongodb_connection_string
+   PORT=4040
+   ```
+
+5. Run the Frontend Application
     cd frontend
     npm start
     
@@ -64,6 +75,11 @@ The project consists of several key components:
 - `SignupModal.jsx`: Handles new customer registration
 - `Table.jsx`: Main component for displaying and managing the schedule
 - `Sidebar.jsx`: Navigation component
+- `config/`: Database configuration
+- `controllers/`: Contains controller logic
+- `models/`: Mongoose models for database schemas
+- `routes/`: API route definitions
+- `app.js`: Main application file
 
 ## Technologies Used
 - React 18.3.1
@@ -72,6 +88,7 @@ The project consists of several key components:
 - Axios for API requests
 - React DatePicker for date selection
 - React Toastify for notifications
+
 
 ## API Integration
 The application interacts with a backend API running on `http://localhost:5050`. Ensure the backend server is running and accessible.
@@ -82,11 +99,15 @@ The application interacts with a backend API running on `http://localhost:5050`.
 1. All time slots are exactly 60 minutes long.
 2. Booking conflicts are resolved server-side by checking for overlapping slots.
 3. A specific data structure for centers, sports, and bookings is assumed.
+4. The system assumes that each sport has a fixed number of courts and time slots.
+
 
 - Limitations:
 
 1. Recurring bookings are not supported.
 2. The application is not fully responsive on smaller screens.
 3. Authentication is not implemented (trusted users assumed).
+4. User authentication is implemented using a PIN-based system with bcrypt for hashing.
+5. The current implementation does not include payment processing.
 
 
