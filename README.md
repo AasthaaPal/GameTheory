@@ -43,9 +43,12 @@ To run this project locally, ensure you have the following installed:
    
    
    - Frontend
+
     cd frontend
     npm install
+
     - Backend
+    
     cd backend
     npm install
 
@@ -94,6 +97,24 @@ The project consists of several key components:
 - React DatePicker for date selection
 - React Toastify for notifications
 
+## API Endpoints
+
+- Centers:
+  - GET `/centers`: Fetch all centers
+  - POST `/centers`: Create a new center
+
+- Bookings:
+  - GET `/bookings`: Fetch all bookings
+  - POST `/bookings`: Create a new booking
+
+- Sports:
+  - GET `/sports`: Fetch all sports
+  - POST `/sports/:centerId`: Create a new sport for a specific center
+
+- Users:
+  - GET `/users`: Fetch all users
+  - POST `/users`: Create a new user
+  - POST `/users/validate-user`: Validate user credentials
 
 ## API Integration
 The application interacts with a backend API running on `http://localhost:5050`. Ensure the backend server is running and accessible.
