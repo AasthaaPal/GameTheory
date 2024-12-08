@@ -16,11 +16,11 @@ This is a full-stack application developed for a sports technology company to ma
 
 ## Screenshots
 
-[!New user signup](../frontend/images/new_user.png)
+[!New user signup](https://github.com/AasthaaPal/GameTheory/blob/main/frontend/images/new_user.png)
 
-[!Booking on occupied court](../frontend/images/booking.png)
+[!Booking on occupied court](https://github.com/AasthaaPal/GameTheory/blob/main/frontend/images/booking.png)
 
-[!View Bookings](../frontend/images/allbookings.png)
+[!View Bookings](https://github.com/AasthaaPal/GameTheory/blob/main/frontend/images/allbookings.png)
 
 
 ## Prerequisites
