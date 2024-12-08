@@ -19,7 +19,7 @@ const Sidebar = () => {
           </div>
           <div>
             <p>Admin</p>
-            <p className="text-sm text-gray-400">Aasthaaa</p>
+            <p className="text-sm text-gray-400">Aastha Pal</p>
           </div>
         </div>
       </div>
