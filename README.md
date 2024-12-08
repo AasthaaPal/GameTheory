@@ -43,15 +43,15 @@ To run this project locally, ensure you have the following installed:
    
    
    - Frontend
-
+    ```
     cd frontend
     npm install
-
+    ```
     - Backend
-    
+    ```
     cd backend
     npm install
-
+    ```
 3. Run the Backend Server
     
     cd backend
